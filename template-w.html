@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Template W</title>
+    <meta name="description" content="Een website template voor bedrijven en professionals die actief zijn op het gebied van wellness">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Gruppo" rel="stylesheet">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script>
+    function toggle(id) {
+    "use strict";
+    var e = document.getElementById("hoofdmenu");
+    if (e.style.display === "block") {
+        e.style.display = "none";
+    } else {
+        e.style.display = "block";
+    }
+}
+    </script>
+<style>
+body {
+    background-color: #fffaf7;
+    color: #333;
+    font-family: verdana, sans-serif;
+    font-size: 1em;
+    line-height: 1.3;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Gruppo', cursive;
+}
+
+header {
+    background-color: #fffaf7;
+    background-image: url(afbeeldingen-templates/wellness.jpg);
+    background-size: cover;
+    background-position: center center;
+    padding: 1em 0.5em 1em 0.5em;
+    text-align: left;
+}
+
+header h1 {
+    width: 50%;
+}
+
+header a {
+    text-decoration: none;
+    color: #ca0093;
+}
+
+nav {
+    background-color: transparent;
+}
+
+nav p.menuknop  {
+    position: absolute;
+    top: 0;
+    right: 12px;
+    font-family: courier, monospace;
+    font-size: 28px;
+    line-height: 1;
+    margin: 0;
+}
+
+nav ul {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    border-top: 1px solid darkgrey;
+    padding: .7em .4em .6em .4em;
+}
+
+nav a {
+    color: #363f4b;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background-color: #e7e9f3;
+}
+
+nav ul li.submenu {
+    position: relative;
+}
+
+nav ul li.submenu > a:after {
+    content: " \025BE";
+}
+
+nav > ul > li:last-child {
+    border-bottom: 1px solid darkgrey;
+}
+
+nav ul li.submenu:hover ul {
+    box-sizing: border-box;
+    background-color: #e7e9f3;
+    display: block;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 2;
+}
+
+nav li li:first-child {
+    border-top: none;
+}
+
+nav li li a:hover {
+    color: #ca0093;
+}
+
+article {
+    background-color: #fffaf7;
+    padding: 1em;
+}
+
+article h1 {
+    color: #363f4b;
+}
+
+article h2 {
+    color: #ca0093;
+    margin-top: 1.5em;
+}
+
+aside {
+    background-color: #abc1e8;
+    padding: 1em 1em 2em 1em;
+    text-align: center;
+}
+
+aside h3, aside h4 {
+    color: #770257;
+}
+footer {
+    background-color: #6d75a6;
+    color: white;
+    font-size: .9em;
+    padding: 2em;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+img.rechts, img.links {
+    box-sizing: border-box;
+    display: block;
+    margin: 0.5em auto;
+    max-width: 100%;
+}
+
+@media screen and (min-width: 550px) {
+    header {
+        margin-top: .5em;
+        padding: 2em .5em 7em 0.5em;
+    }
+    header h1 {
+        width: 80%;
+    }
+    nav {
+        position: absolute;
+        top: 0;
+        right: 10px;
+    }
+
+    nav p.menuknop {
+        display: none;
+    }
+    
+    nav > ul {
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
+        display: flex !important;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+    }
+    
+    nav ul li:hover {
+        background-color: rgba(24, 27, 30, 0.84);
+    }
+
+    nav ul li.submenu:hover ul {
+        width: 8em;
+        left: 0;
+        top: 100%;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        background-color: rgba(24, 27, 30, 0.84);
+        border-top: 1px solid darkgrey;
+    }
+    
+    nav > ul > li:hover a, nav li li a {
+        color: #fffaf7;
+    }
+        
+    nav > ul > li {
+        border-top: none;
+    }
+    
+    nav > ul > li:last-child {
+        border-bottom: none;
+    }
+
+    img.rechts {
+        float: right;
+        margin: 0.4em 0 0.4em .8em;
+    }
+
+    img.links {
+        float: left;
+        margin: 0.4em .8em 0.4em 0;
+    }
+
+}
+
+@media screen and (min-width: 700px) {
+     header {
+        padding: 3em .5em 9em 1em;
+    }
+    
+    header h1 {
+        font-size: 2.4em;
+    }
+
+    .art-aside {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    aside {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 18%;
+        flex: 0 0 18%;
+        font-size: .9em;
+        background-color: #fffaf7;
+        margin-top: 1.1em;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    header {
+        background-position: right center;
+        padding: 12em .5em 1em 0.5em;
+        text-align: left;
+    }
+    header h1 {
+        font-size: 3.5em;
+    }
+    .nav-aa {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+    nav {
+        font-size: 1.1em;
+     }
+     nav > ul {
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+    }
+    .art-aside {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+      aside {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 22%;
+        flex: 0 0 22%;
+    }
+}
+
+@media screen and (min-width: 1250px) {
+        header {
+            padding: 12em .5em 4.2em 0.5em;
+
+        }
+        header h1 {
+            font-size: 4.5em;
+        }
+        nav {
+            top: 1em;
+            right: auto;
+    }
+    }    
+</style>
+
+</head>
+ 
+<body>
+    <div class="websitevak">
+        
+        <header>
+            <h1><a href="website-templates.html">Jouw-Eigen-Website.nl</a></h1>
+        </header>
+
+        <div class="nav-aa">
+
+            <nav>
+                    <p class="menuknop"><a href="#" onclick=toggle('hoofdmenu');>&#9776;</a></p>
+                        <ul id="hoofdmenu">
+                            <li><a href="website-templates.html">Home</a></li>
+                            <li class="submenu"><a href="#" onClick="return true">Hobby’s</a>
+                                <ul>
+                                    <li><a href="#">Fotografie</a></li>
+                                    <li><a href="#">Zeilen</a></li>
+                                    <li><a href="#">Lezen</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu"><a href="#" onClick="return true">Foto’s</a>
+                                <ul>
+                                    <li><a href="#">Vakanties</a></li>
+                                    <li><a href="#">Familie</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Wie zijn wij</a></li>
+                            <li class="submenu"><a href="#" onClick="return true">Reizen</a>
+                                <ul>
+                                    <li><a href="#">Egypte</a></li>
+                                    <li><a href="#">Zuid-Afrika</a></li>
+                                    <li><a href="#">India</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+
+            <div class="art-aside">
+
+                <article>
+                        <h1>Homepage</h1>
+
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Curabitur bibendum orci sit amet odio varius pulvinar. 
+                        Quisque malesuada iaculis nibh, a vulputate orci rutrum sed. 
+                        In vitae neque nibh. Maecenas semper dolor nec orci vestibulum cursus. 
+                        Phasellus vel eros urna, at laoreet lorem. 
+                        Nam diam libero, vulputate non aliquet et, tempus consectetur magna. 
+                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                        Morbi consequat ornare arcu at convallis. Quisque porta ultrices ligula et vulputate. 
+                        Nulla et lacus elit, id dapibus ante. Ut vulputate aliquam consequat. 
+                        In nulla quam, consectetur in consequat quis, facilisis non nisi.
+                        </p>
+
+                        <ul>
+                            <li>lorem ipsum 1, lorem ipsum 1, lorem ipsum 1, lorem ipsum 1, lorem ipsum 1</li>
+                            <li>lorem ipsum 2</li>
+                            <li>lorem ipsum 3</li>
+                        </ul>
+
+                        <h2>Duis consectus</h2>
+                        <p>Duis consectus vestibulum condimentum. 
+                        Morbi bibendum, nisl id hendrerit rutrum, orci metus semper nulla, a condimentum augue turpis quis elit. 
+                        Donec dolor velit, egestas sit amet faucibus non, placerat eget erat. 
+                        Etiam lectus neque, hendrerit in feugiat ac, malesuada eu arcu. 
+                        Ut ipsum dui, sollicitudin eget viverra a, hendrerit in sapien. 
+                        Proin hendrerit orci eget nulla tristique sit amet volutpat arcu ornare. 
+                        Ut auctor viverra turpis id tincidunt. Curabitur eu lectus non orci interdum sagittis at condimentum justo. 
+                        Donec porttitor massa tortor, et malesuada odio. Sed eget nisl sit amet mauris tempor ultrices ut eget erat. 
+                        Mauris sit amet erat quis risus vehicula fermentum. Nulla sollicitudin pulvinar venenatis.
+                        </p>
+
+                        <ol>
+                            <li>lorem ipsum 1</li>
+                            <li>lorem ipsum 2</li>
+                            <li>lorem ipsum 3</li>
+                        </ol>
+
+                        <h2>Nunc sit amet</h2>
+                        <p>Nunc sit amet purus id turpis vestibulum malesuada at sed dui. 
+                        Ut iaculis, nisl eget placerat pellentesque, eros diam viverra orci, a hendrerit sapien mi ac dui. 
+                        Fusce a nibh at urna posuere posuere. Morbi enim orci, tincidunt porttitor ultrices nec, ultrices eleifend nibh. 
+                        Aliquam erat volutpat. Donec scelerisque tincidunt velit, sit amet ultricies ante accumsan ac. 
+                        Praesent vestibulum porta enim, et rhoncus eros porta ac. Vivamus blandit hendrerit turpis, ac consequat lorem convallis ac. 
+                        Vestibulum nec mauris eget leo sollicitudin porttitor eget ornare augue. 
+                        Maecenas sed enim at urna tincidunt convallis. Donec non nunc at turpis imperdiet vestibulum. 
+                        Vestibulum ut rutrum neque. Nulla tortor orci, volutpat sit amet fermentum et, convallis interdum justo. 
+                        Integer tristique condimentum ullamcorper.
+                        </p>
+
+                        <h2>Nunc fringilla</h2>
+                        <img src="https://www.mijn-eigen-website.nl/afbeeldingen-templates/stenen.jpg" alt="stenen" class="links" style="width: 300px; padding: 6px; border: 1px solid grey;">
+                        <p>Nunc fringilla elementum quam, eget sagittis orci venenatis a. 
+                        Nunc consequat odio enim, sit amet fringilla massa. 
+                        Donec mattis venenatis eleifend. 
+                        Nulla facilisis ligula eget sapien lacinia gravida. 
+                        Nam eu odio neque. Vivamus lacinia laoreet ante ut consequat. 
+                        Aliquam ac tellus magna, in dapibus magna. 
+                        Mauris eleifend, nisl at tempor dignissim, sapien purus pharetra quam, 
+                        non fringilla est dolor ac turpis. 
+                        Proin ornare sapien in augue posuere id pretium diam malesuada. 
+                        Suspendisse dui justo, lacinia convallis mattis quis, laoreet vel nibh. 
+                        Praesent eget quam lorem, ut vestibulum orci. Donec vehicula iaculis lacinia. 
+                        Proin in viverra elit. 
+                        Nulla sed libero dignissim lectus pellentesque porttitor et quis enim. 
+                        Donec congue feugiat leo et accumsan. Nunc eget ligula mi. 
+                        Donec id diam nec lorem tincidunt ultricies. Vivamus quis sapien odio. 
+                        Nunc sed justo dolor. Phasellus sit amet tortor ut augue commodo feugiat vitae id erat.
+                        </p>
+                    </article>
+
+                <aside>
+                        <h3>Duis Consectus</h3>
+                        <p>Nunc fringilla elementum quam, eget sagittis orci venenatis a. </p>
+                        <div class="socialmedia">
+                            <h4>Deel via:</h4>
+                            <img alt="facebook" src="https://www.mijn-eigen-website.nl/afbeeldingen-templates/facebook.png">
+                            <img alt="linkedin" src="https://www.mijn-eigen-website.nl/afbeeldingen-templates/linkedin.png">
+                            <img alt="twitter" src="https://www.mijn-eigen-website.nl/afbeeldingen-templates/twitter.png">
+                            <img alt="youtube" src="https://www.mijn-eigen-website.nl/afbeeldingen-templates/youtube.png">
+                            <img alt="rss" src="https://www.mijn-eigen-website.nl/afbeeldingen-templates/rss.png">
+                        </div>
+                    </aside>
+
+            </div>
+            <!-- einde art-aside -->
+
+        </div>
+        <!-- einde nav-aa -->
+
+        <footer>
+                <p>&copy; 2016 Mijn-eigen-website.nl</p>
+                <p><a href="#">algemene voorwaarden</a></p>
+                <p><a href="#">links</a></p>
+        </footer>
+
+    </div>
+    <!-- einde websitevak -->
+
+</body>
+
+</html>
